@@ -16,7 +16,7 @@ class AccountForm {
         console.log("All Done");
     }
     static getHelloPhrase(formContext) {
-        return "Hello. This contact's first name is " + formContext.data.entity.attributes.get("firstname").getValue();
+        return "Hello. This account name is " + formContext.data.entity.attributes.get("name").getValue();
     }
 }
 exports.AccountForm = AccountForm;
