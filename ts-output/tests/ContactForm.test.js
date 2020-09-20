@@ -16,11 +16,10 @@ describe("ContactForm", function () {
     });
     it("should notify the user of the contact first name on load", function () {
         var frmContext = XrmMock.XrmMockGenerator.getEventContext();
-        frmContext.formContext.data.entity;
-        XrmMock.XrmMockGenerator.Attribute.createString("fullname", "Mike Ochs");
+        XrmMock.XrmMockGenerator.Attribute.createString("firstname", "Mike");
         ContactForm_1.ContactForm.onLoad(frmContext);
         expect(TestInitializer_1.TestInitializer.FormNotifications.size).toBe(1);
-        expect(TestInitializer_1.TestInitializer.FormNotifications.values().next().value).toContain("Mike Ochs");
+        expect(TestInitializer_1.TestInitializer.FormNotifications.values().next().value).toContain("Mike");
     });
 });
 //# sourceMappingURL=ContactForm.test.js.map

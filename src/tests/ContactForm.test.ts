@@ -9,10 +9,9 @@ describe("ContactForm", () => {
 
     it("should notify the user of the contact first name on load", () => {
         let frmContext = XrmMock.XrmMockGenerator.getEventContext();
-        frmContext.formContext.data.entity
-        XrmMock.XrmMockGenerator.Attribute.createString("fullname", "Mike Ochs")
+        XrmMock.XrmMockGenerator.Attribute.createString("firstname", "Mike")
         ContactForm.onLoad(frmContext);
         expect(TestInitializer.FormNotifications.size).toBe(1);
-        expect(TestInitializer.FormNotifications.values().next().value).toContain("Mike Ochs");
+        expect(TestInitializer.FormNotifications.values().next().value).toContain("Mike");
     });
 });

@@ -1,5 +1,5 @@
 {
-  "name": "PowerAppsTypescriptSample",
+  "name": "powerappstypescriptsample",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -8,7 +8,7 @@
     "build": "tsc --build",
     "clean": "tsc --build --clean",
     "parcel-dev": "parcel build ts-output/*.js --global Mf --out-dir parcel-dist/dev/mf_/js/ no-minify",
-    "parcel-prod": "parcel build ts-output/*.js --global Mf --out-dir parcel-dist/dev/mf_/js/",
+    "parcel-prod": "parcel build ts-output/*.js --global Mf --out-dir parcel-dist/prod/mf_/js/",
     "test": "jest"
   },
   "jest": {

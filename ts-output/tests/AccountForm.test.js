@@ -16,7 +16,6 @@ describe("AccountForm", function () {
     });
     it("should notify the user of the account name on load", function () {
         var frmContext = XrmMock.XrmMockGenerator.getEventContext();
-        frmContext.formContext.data.entity;
         XrmMock.XrmMockGenerator.Attribute.createString("name", "Exalents");
         AccountForm_1.AccountForm.onLoad(frmContext);
         expect(TestInitializer_1.TestInitializer.FormNotifications.size).toBe(1);

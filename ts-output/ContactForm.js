@@ -5,9 +5,7 @@ var ContactForm = (function () {
     function ContactForm() {
     }
     ContactForm.onLoad = function (executionContext) {
-        var formContext = executionContext.getFormContext();
-        var hello = FormCommon_1.FormCommon.getHelloPhrase(formContext, "firstname");
-        formContext.ui.setFormNotification(hello, "INFO", "1");
+        FormCommon_1.FormCommon.onLoad(executionContext, "firstname");
     };
     return ContactForm;
 }());

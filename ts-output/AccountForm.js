@@ -5,9 +5,7 @@ var AccountForm = (function () {
     function AccountForm() {
     }
     AccountForm.onLoad = function (executionContext) {
-        var formContext = executionContext.getFormContext();
-        var hello = FormCommon_1.FormCommon.getHelloPhrase(formContext, "name");
-        formContext.ui.setFormNotification(hello, "INFO", "1");
+        FormCommon_1.FormCommon.onLoad(executionContext, "name");
     };
     return AccountForm;
 }());
