@@ -4,7 +4,7 @@ var FormCommon = (function () {
     function FormCommon() {
     }
     FormCommon.getHelloPhrase = function (formContext, primaryFieldName) {
-        return "Hello. The name of this " + formContext.data.entity.getEntityName() + " is " + formContext.data.entity.attributes.get(primaryFieldName).getValue() + ". Cool right?";
+        return "Hello. This " + formContext.data.entity.getEntityName() + "'s name is " + formContext.data.entity.attributes.get(primaryFieldName).getValue() + ". Cool right?";
     };
     return FormCommon;
 }());
