@@ -1,0 +1,29 @@
+{
+  "name": "typescripttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "parcel-dev": "parcel build ts-output/*.js --global Mf --out-dir parcel-dist/dev/mf_/js/ no-minify",
+    "parcel-prod": "parcel build ts-output/*.js --global Mf --out-dir parcel-dist/dev/mf_/js/",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/sinon": "^7.5.1",
+    "@types/xrm": "^9.0.18",
+    "jest": "^24.9.0",
+    "jest-editor-support": "^27.1.1",
+    "jest-junit": "^10.0.0",
+    "jest-sinon": "^1.0.2",
+    "typescript": "3.7.4",
+    "xrm-mock": "^3.4.17",
+    "sinon": "^8.1.0",
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {}
+}

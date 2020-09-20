@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "lib": [ "es2015", "dom" ],
+    "outDir": "ts-output",
+    "sourceMap": true,
+    "strict": false,
+    "strictNullChecks": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
