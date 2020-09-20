@@ -1,13 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AccountForm = void 0;
-var BaseForm_1 = require("./BaseForm");
+var FormCommon_1 = require("./FormCommon");
 var AccountForm = (function () {
     function AccountForm() {
     }
     AccountForm.onLoad = function (executionContext) {
         var formContext = executionContext.getFormContext();
-        var hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "name");
+        var hello = FormCommon_1.FormCommon.getHelloPhrase(formContext, "name");
         formContext.ui.setFormNotification(hello, "WARNING", "1");
     };
     return AccountForm;

@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseForm = (function () {
-    function BaseForm() {
+var FormCommon = (function () {
+    function FormCommon() {
     }
-    BaseForm.getHelloPhrase = function (formContext, primaryFieldName) {
+    FormCommon.getHelloPhrase = function (formContext, primaryFieldName) {
         return "Hello. The name of this " + formContext.data.entity.getEntityName() + " is " + formContext.data.entity.attributes.get(primaryFieldName).getValue();
     };
-    return BaseForm;
+    return FormCommon;
 }());
-exports.BaseForm = BaseForm;
-//# sourceMappingURL=BaseForm.js.map
+exports.FormCommon = FormCommon;
+//# sourceMappingURL=FormCommon.js.map

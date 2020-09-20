@@ -1,10 +1,10 @@
-import {BaseForm} from "./BaseForm";
+import {FormCommon} from "./FormCommon";
 
 export class AccountForm {
 
-    public static onLoad(executionContext: Xrm.Events.EventContext): any {
+    public static onLoad(executionContext: Xrm.Events.EventContext): void {
         let formContext: Xrm.FormContext = executionContext.getFormContext();
-        let hello: string = BaseForm.getHelloPhrase(formContext, "name");
+        let hello: string = FormCommon.getHelloPhrase(formContext, "name");
         formContext.ui.setFormNotification(hello, XrmEnum.FormNotificationLevel.Warning, "1");
     }
 }
