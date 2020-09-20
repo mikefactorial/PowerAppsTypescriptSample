@@ -1,21 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const BaseForm_1 = require("./BaseForm");
-class AccountForm {
-    static onLoad(executionContext) {
-        let formContext = executionContext.getFormContext();
-        let hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "firstname");
-        formContext.ui.setFormNotification(hello, "WARNING" /* Warning */, "1");
-        //alert(hello);
-        console.log("All Done");
+exports.AccountForm = void 0;
+var BaseForm_1 = require("./BaseForm");
+var AccountForm = (function () {
+    function AccountForm() {
     }
-    static onSave(executionContext) {
-        let formContext = executionContext.getFormContext();
-        let hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "firstname");
-        formContext.ui.setFormNotification(hello, "WARNING" /* Warning */, "1");
-        //alert(hello);
-        console.log("All Done");
-    }
-}
+    AccountForm.onLoad = function (executionContext) {
+        var formContext = executionContext.getFormContext();
+        var hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "name");
+        formContext.ui.setFormNotification(hello, "WARNING", "1");
+    };
+    return AccountForm;
+}());
 exports.AccountForm = AccountForm;
 //# sourceMappingURL=AccountForm.js.map

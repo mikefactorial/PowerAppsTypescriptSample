@@ -1,21 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const BaseForm_1 = require("./BaseForm");
-class ContactForm {
-    static onLoad(executionContext) {
-        let formContext = executionContext.getFormContext();
-        let hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "fullname");
-        formContext.ui.setFormNotification(hello, "WARNING" /* Warning */, "1");
-        //alert(hello);
-        console.log("All Done");
+exports.ContactForm = void 0;
+var BaseForm_1 = require("./BaseForm");
+var ContactForm = (function () {
+    function ContactForm() {
     }
-    static onSave(executionContext) {
-        let formContext = executionContext.getFormContext();
-        let hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "fullname");
-        formContext.ui.setFormNotification(hello, "WARNING" /* Warning */, "1");
-        //alert(hello);
+    ContactForm.onLoad = function (executionContext) {
+        var formContext = executionContext.getFormContext();
+        var hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "fullname");
+        formContext.ui.setFormNotification(hello, "WARNING", "1");
         console.log("All Done");
-    }
-}
+    };
+    ContactForm.onSave = function (executionContext) {
+        var formContext = executionContext.getFormContext();
+        var hello = BaseForm_1.BaseForm.getHelloPhrase(formContext, "fullname");
+        formContext.ui.setFormNotification(hello, "WARNING", "1");
+        console.log("All Done");
+    };
+    return ContactForm;
+}());
 exports.ContactForm = ContactForm;
 //# sourceMappingURL=ContactForm.js.map

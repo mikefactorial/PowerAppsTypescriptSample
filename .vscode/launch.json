@@ -14,7 +14,7 @@
         ],
         "internalConsoleOptions": "openOnSessionStart",
         "outFiles": [
-          "${workspaceFolder}/ts-output/*"
+          "${workspaceFolder}/ts-output/**/*"
         ]
       }
     ]
