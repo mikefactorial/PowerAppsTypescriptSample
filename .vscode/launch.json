@@ -7,15 +7,15 @@
       {
         "type": "node",
         "request": "launch",
-        "name": "Jest Tests",
-        "program": "${workspaceFolder}\\node_modules\\jest\\bin\\jest.js",
-        "args": [
-          "-i"
-        ],
-        "internalConsoleOptions": "openOnSessionStart",
-        "outFiles": [
-          "${workspaceFolder}/ts-output/**/*"
-        ]
+        "name": "Jest All",
+        "program": "${workspaceFolder}/node_modules/.bin/jest",
+        "args": ["--runInBand"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "disableOptimisticBPs": true,
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        }
       }
     ]
   }

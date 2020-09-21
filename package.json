@@ -12,7 +12,8 @@
     "test": "jest"
   },
   "jest": {
-    "verbose": true,
+    "testEnvironment": "node",
+    "verbose": false,
     "testMatch": [
       "**/ts-output/**/*.test.js"
     ]
